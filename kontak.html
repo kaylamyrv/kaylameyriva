@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - Famous High School</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h1 class="logo">
+        <img
+          src="assets/images/logo Famous High School.png"
+          alt="logo Famous High School"
+        />
+        Famous High School
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html" class="active">Kontak</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section">
+      <div class="hero-logo">
+        <img
+          src="assets/images/logo Famous High School.png"
+          alt="logo Famous High School"
+        />
+        <h1>Famous High School</h1>
+      </div>
+      <h2 data-animate>Hubungi Kami</h2>
+      <form
+        class="contact-form"
+        id="contactForm"
+        action="send_email.php"
+        method="POST"
+        data-animate
+      >
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          placeholder="Nama Lengkap"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          id="pesan"
+          name="pesan"
+          placeholder="Tulis pesan Anda..."
+          required
+        ></textarea>
+        <button type="submit" class="btn-primary">Kirim Pesan</button>
+      </form>
+      <p id="formResult"></p>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 Famous High School | Website dibuat oleh
+        <strong>Kayla Meyriva Lesmana</strong>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
